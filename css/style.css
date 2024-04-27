@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/img/fon5.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+html {
+  color: #fff;
+}
+section {
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  padding: 30px;
+}
+span {
+  color: rgb(218, 22, 38);
+  font-size: 30px;
+}
+
+.pre {
+  max-width: 700px;
+  width: 100%;
+  border: 5px solid white;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto;
+}
+.pre pre {
+  font-size: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #333;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#menu {
+  display: flex;
+}
+
+#menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+#menu ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+#menu.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #333;
+  top: 110px;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 50px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+/*buttona parametrler tetbiq edilir*/
+button {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(218, 22, 38, 0.17);
+  border-radius: 67px;
+  border: 5px solid rgb(218, 22, 38, 0.17);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+
+  padding: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.location-img {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.location-img img {
+  border-radius: 10px;
+  border: 10px solid rgba(1, 11, 14, 0.87);
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+figure {
+  display: block;
+  margin: 0 auto;
+}
+figure img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+figcaption p {
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #menu ul {
+    display: none;
+  }
+
+  #menu ul li {
+    margin: 15px 0;
+  }
+
+  #menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle.active .hamburger:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 5px;
+  }
+
+  #menu-toggle.active .hamburger:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -17px;
+  }
+}

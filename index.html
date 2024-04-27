@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript-9</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <!---navbar statr-->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Screen obyekti </a></li>
+          <li><a href="location.html">Location obyekti </a></li>
+          <li><a href="host.html">Host xüsusiyyəti </a></li>
+          <li><a href="string.html">String xüsusiyyəti</a></li>
+          <li><a href="offunksiya.html">indexOf funksiyası </a></li>
+          <li><a href="concat.html">concat funksiyası </a></li>
+        </ul>
+      </nav>
+      <!---navbar finished-->
+      <!-----kecid menyusu -->
+
+      <div id="menu-toggle">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <!------------------------ -->
+    </header>
+    <main>
+      <section>
+        <div class="screen">
+          <h1>Screen obyekti</h1>
+
+          <p>
+            Javascriptdə istifadəçinin ekranı haqqında məlumatları özündə
+            saxlayan screen obyekti mövcuddur. Bu obyekt bir sıra
+            xüsusiyyətlərdən ibarətdir.
+            <br />
+
+            <span>width və height</span> xüsusiyyətləri — istifadəçinin
+            ekranının enini və uzunluğunu bizə piksellə verməkdədir.
+          </p>
+        </div>
+        <div class="pre">
+          <pre>
+                document.write("En: " + screen.width);
+              
+                document.write("Uzunluq: " + screen.height);
+                </pre
+          >
+          <p>Beləliklə ekranın enini və uzunluğunu çap etmiş oluruq.</p>
+        </div>
+
+        <div class="avai">
+          <p>
+            <span> availWidth və availHeight </span>xüsusiyyətləri — Windows
+            Taskbar istisna olmaqla ekranın enini və uzunluğunu göstərməkdədir.
+          </p>
+        </div>
+        <div class="pre">
+          <pre>
+            document.write("En: " + screen.availWidth);
+            
+            document.write("Uzunluq: " + screen.availHeight);
+            
+                </pre
+          >
+          <p>Beləliklə, məlumatları çap etmiş oluruq.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app/script.js"></script>
+  </body>
+</html>

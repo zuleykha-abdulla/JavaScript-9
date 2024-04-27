@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location obyekti</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <!---navbar statr-->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Screen obyekti </a></li>
+          <li><a href="location.html">Location obyekti </a></li>
+          <li><a href="host.html">Host xüsusiyyəti </a></li>
+          <li><a href="string.html">String xüsusiyyəti</a></li>
+          <li><a href="offunksiya.html">indexOf funksiyası </a></li>
+          <li><a href="concat.html">concat funksiyası </a></li>
+        </ul>
+      </nav>
+      <!---navbar finished-->
+      <!-----kecid menyusu -->
+
+      <div id="menu-toggle">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <!------------------------ -->
+    </header>
+    <main>
+      <section>
+        <div class="location">
+          <h1>Location obyekti</h1>
+          <p>
+            <span>location obyekti</span> - səhifənin cari URL ünvanı haqqında
+            məlumatları özündə saxlamaqdadır.
+            <br />
+            <span>assign funkiyası</span> — başqa bir səhifəni yükləmək üçün
+            istifadə olunur. Obyekt daxilində bir sıra funksiyalar və
+            xüsusiyyətlər mövcuddur.
+          </p>
+        </div>
+        <div class="pre">
+          function funksiya(){
+          <br />
+          location.assign("http://google.az"); }
+          <br />
+          <br />
+          Beləliklə, düyməyə basdıqda yeni səhifə yüklənmiş olur.
+        </div>
+        <br />
+        <button onclick="funksiya();">Deyis</button>
+        <div class="location-img">
+          <figure>
+            <img src="./img/Picture1.png" alt="" />
+            <figcaption>
+              <p>Şəkil 1. Google yeni pəncərə açılacaq</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="replace">
+          <p>
+            <span>replace funksiyası </span>— bu funksiya hal-hazırda olan
+            səhifəni başqa biri ilə əvəzləmək üçün istifadə olunur.
+          </p>
+        </div>
+        <button onclick="myfunksiya();">Deyis</button>
+        <div class="location-img">
+          <figure>
+            <img src="./img/Picture2.png" alt="" />
+            <figcaption>
+              <p>
+                Şəkil 2. Google yeni pəncərə açılacaq, lakin əvvəlki səhifəyə
+                geri qayıtmaq olmur
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="reload">
+          <p>
+            <span>reload funksiyası</span> — cari səhifəni yeniləmək üçün
+            istifadə olunur.
+          </p>
+        </div>
+        <button onclick="loadfunksiya();">Deyis</button>
+        <div class="href">
+          <p>
+            <span>href xüsusiyyəti</span> — səhifənin url ünvanını bizə
+            göstərməkdədir.
+          </p>
+        </div>
+        <button onclick="hreffunksiya();">Kecid</button>
+      </section>
+    </main>
+    <script src="./app/location.js"></script>
+  </body>
+</html>
